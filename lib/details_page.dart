@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DetailsPage extends StatefulWidget {
   final title, author, urlToImage, publishedAt, description;
@@ -51,15 +52,15 @@ class _DetailsPageState extends State<DetailsPage> {
                         padding: EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 20.0),
                         child: Text(
                           widget.title,
-                          style: TextStyle(
+                          style: GoogleFonts.inter(
                             fontSize: 30.0,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
                       Text(
                         widget.publishedAt.substring(0, 10),
-                        style: TextStyle(
+                        style: GoogleFonts.inter(
                           fontSize: 20.0,
                         ),
                       ),
@@ -67,14 +68,14 @@ class _DetailsPageState extends State<DetailsPage> {
                         padding: EdgeInsets.all(20.0),
                         child: Text(
                           widget.description,
-                          style: TextStyle(
+                          style: GoogleFonts.inter(
                             fontSize: 25.0,
                           ),
                         ),
                       ),
                       Text(
                         widget.author,
-                        style: TextStyle(
+                        style: GoogleFonts.inter(
                           fontSize: 15.0,
                         ),
                       ),

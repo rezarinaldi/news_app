@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:card_swiper/card_swiper.dart';
 import 'package:news_app/details_page.dart';
@@ -28,7 +29,9 @@ class _HomePageState extends State<HomePage> {
           title: new Center(
             child: Text(
               "News Page",
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ),
           automaticallyImplyLeading: false,
@@ -83,9 +86,9 @@ class _HomePageState extends State<HomePage> {
                                     EdgeInsets.fromLTRB(20.0, 20.0, 10.0, 20.0),
                                 child: Text(
                                   _get[index]["title"],
-                                  style: TextStyle(
+                                  style: GoogleFonts.inter(
                                     fontSize: 25.0,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
